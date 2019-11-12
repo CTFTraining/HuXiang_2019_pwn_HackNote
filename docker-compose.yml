@@ -1,0 +1,15 @@
+version: "2"
+services:
+  
+  pwn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ctftraining/suctf_2019_pwn_oldpc
+    volumes:
+      - ./tcpdump:/var/lib/tcpdump
+    ports:
+      - "10001:10000"
+    environment:
+      - FLAG=ctftraining{welcome_to_ctftraining}
+      - TCPDUMP_ENABLE=0
