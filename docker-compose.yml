@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ctftraining/suctf_2019_pwn_oldpc
+    image: ctftraining/huxiangbei_2019_pwn_hacknote
     volumes:
       - ./tcpdump:/var/lib/tcpdump
     ports:
